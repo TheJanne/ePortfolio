@@ -1,0 +1,101 @@
+nav{
+    margin: auto;
+    height: auto;
+    align-content: center;
+    background: #2d2d2e80;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h1, h3{
+    color: white;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/wooden_background.jpg");
+}
+
+.section{
+    width: 80%;
+    margin: 2% auto;
+    height: 400px;
+    padding: 1em;
+    border: 20px solid;
+    border-radius: 20px;
+    box-shadow: -10px 20px #2d2d2e80;
+}
+
+#introduction{
+    background: #4286f4;
+    border-color: #4286f4;
+    text-align: center;
+}
+
+.skill{
+    margin: 0;
+}
+
+#skills{
+    background: #44a812;
+    border-color: #44a812;
+    display: flex;
+    justify-content: center;    
+}
+
+#skills div{
+    text-align: center;
+}
+
+#message{
+    background: #f4ac41;
+    border-color: #f4ac41;
+}
+
+#contact{
+    background: #ff4242;
+    border-color: #ff4242;
+}
+
+#greeting{
+    font-size: 2em;
+}
+
+.typed-cursor{
+    display: none;
+}
+
+.checked{
+    color: orange;
+}
+
+@keyframes starRotate {
+    0%   {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+/* The element to apply the animation to */
+.checked {
+    animation-name: starRotate;
+    animation-duration: 2s;    
+    animation-iteration-count: infinite;
+}
+
+#programmingStory{
+    width: 20%;
+    margin: auto 0px;
+    font-size: 2em;
+}
+
+#ratings{
+    width: 50%;
+}
+
+#messageForm{
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5%;
+}
