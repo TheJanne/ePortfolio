@@ -1,0 +1,72 @@
+section{
+    width: 100%;
+    height: auto;
+    min-height: 450px;
+    padding: 2em 2em;
+    display: flex;
+}
+
+#greeting {
+    display: inline-block;
+}
+
+#introduction{
+    background: #4286f4;
+    border-color: #4286f4;
+    text-align: center;
+}
+
+#introduction > div {
+    min-height: 30px;
+}
+
+.skill{
+    margin: 0;
+}
+
+#skills{
+    background: #44a812;
+    border-color: #44a812;
+    display: flex;
+}
+
+#feedback {
+    background: #f4ac41;
+    border-color: #f4ac41;
+}
+
+#contact{
+    background: #ff4242;
+    border-color: #ff4242;
+    position: relative;
+
+}
+
+aside {
+    width: 20%;
+}
+
+article {
+    width: 80%;
+}
+
+#greeting{
+    font-size: 2em;
+    height: 0em;
+    
+}
+
+#programmingThought{
+    width: 20%;
+    font-size: 2em;
+    font-family: sans-serif;
+    background: #f9d85e;
+    padding: 0.5em 0.25em;
+    border-top: 1em solid #e8c237;
+    box-sizing: border-box;
+    box-shadow: 5px 20px #3a372b70;
+}
+
+section {
+    display: inline-flex;
+}

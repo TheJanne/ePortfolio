@@ -6,130 +6,71 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="js/introductionTyper.js" type="text/javascript"></script>
     <link href="css/styling.css" type="text/css" rel="stylesheet" />
+    <link href="css/sections.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
   </head>
 
-  <body>
-    <nav>
-      <div>      
-        <a href="#introduction">Introduction</a>
-        <a href="#skills">My Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+  <body>    
+    <header>      
+      <a href="#introduction">Introduction</a>
+      <a href="#skills">My Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </header>    
 
-    <div class="section" id="introduction">  
-      <div style="height: 10%;"><p id="greeting"></p></div>         
-      <div style="height: 10%;"><h1>About me</h1></div>
-      <div style="height: 60%;"><p> </p></div>
-           
-    </div>
-
-    <div class="section" id="skills">
-      <div id="programmingStory">
-        <p>Sometimes I find myself coding at 2 am and thinking to myself "Damn, I did it again..."</p>
-      </div>
+    <section id="introduction">     
+      <aside>
+        <img src="images/Minä.png"/>
+      </aside>
+        
+      <article>
+        <h1>About me</h1>
+        <p>
+        I'm web-application developer from Oulu. I like challenges and trying out new things
+        because anything could be learned from them and nothing is impossible in ICT. 
+        </p>
+        <p>
+        I'm a team player who sees himself as one of the parts of a team. 
+        </p>
+        <p id="greeting"></p>
+      <article/>
       
-      <div id="ratings">
-        <h3>Back end</h3>
-        <div class="skill">
-        <p>C#</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        </div>
-        <div class="skill">
-        <p>Java</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        </div>
-        <div class="skill">
-        <p>php</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-        </div>
-        <div class="skill">
-        <p>Python</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-        </div>
-        <div class="skill">
-        <p>MySQL</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        </div>
-      </div>
-      <div>
-        <h3>Front end</h3>
-        <div class="skill">
-        <p>JavaScript</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        </div>
-
-        <div class="skill">
-        <p>Jquery</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-        </div>
-
-        <div class="skill">
-        <p>Reactjs</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-        </div>
-        <div class="skill">
-        <p>Css</p>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span>
-        </div>
-      </div>
-    </div>
-
-    <div class="section" id="contact">
-      <a href="https://www.linkedin.com/in/janne-tuhkanen-525962161/" target="_blank">
-        <img src="images/linkedin.png"/>
-      </a>
-      <a href="https://github.com/TheJanne" target="_blank">
-        <img src="images/github.png"/>
-      </a>
-    </div>
+    </section>
     
-    <div class="section" id="message">
-      <form id="messageForm">
-        <p>Name: </p>
-        <input name="name" type="text"/>
-        <p>Message: </p>
-        <input name="message" type="text"/>
-      </form>
-    </div>
+    <section id="skills">
+      <aside id="programmingThought">
+        <p>Sometimes I find myself coding at 2am and thinking to myself "Damn, I did it again..."</p>
+        <p> - Me, the next day</p>
+      </aside>
+      <article>
+        <p>
+          During my time on DevLAB I learned alot about healthcare policy and problems on that field.
+          Most of the time I worked as a contact person in my team, that was working on the solutions for
+          poor hand hygiene. 
+        </p>
+        <p>
+          Finally after Gate 2. We got to develop our prototype so that it contained Arduino.
+          Me, Saila and Dat was working on technological part of our prototype. 
+          I was mostly handling logic of led lights, Dat was working on our night clock feature 
+          and Saila got the movement detetor working.
+        </p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <aside>
+        <a href="https://www.linkedin.com/in/janne-tuhkanen-525962161/" target="_blank">
+          <img src="images/linkedin.png"/>
+        </a>
+        <a href="https://github.com/TheJanne" target="_blank">
+          <img src="images/github.png"/>
+        </a>
+      </aside>
+    </section>
+    
+    <section id="feedback">
+
+    </section>
   </body>
 </html>
