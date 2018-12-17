@@ -1,19 +1,39 @@
 header{
-    
+    text-align: center;
+    padding: 1.5em;
 }
 
 a {
     text-decoration: none;
+    margin: 2%;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 p, h1, h3{
-    color: white;
+    color: black;
 }
 
-body{
-    padding: 0;
+#introductionButton {
+    color: #4286f4;
+}
+
+#skillButton {
+    color: #44a812;
+}
+
+#contactButton {
+    color: #ff4242;
+}
+
+#experienceButton {
+    color: #f4ac41;
+}
+
+body {
     margin: 0;
-    background-image: url("../images/wooden_background.jpg");
+    padding: 0;
+    width: 100%;
 }
 
 .typed-cursor{

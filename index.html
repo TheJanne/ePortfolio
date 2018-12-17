@@ -13,37 +13,44 @@
 
   <body>    
     <header>      
-      <a href="#introduction">Introduction</a>
-      <a href="#skills">My Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+      <a id="introductionButton" href="#introduction">Introduction</a>
+      <a id="skillButton" href="#skills">My Skills</a>
+      <a id="contactButton" href="#contact">Contact</a>
+      <a id="experienceButton" href="#experience">Experience</a>
     </header>    
 
-    <section id="introduction">     
-      <aside>
-        <img src="images/Minä.png"/>
-      </aside>
-        
-      <article>
-        <h1>About me</h1>
-        <p>
-        I'm web-application developer from Oulu. I like challenges and trying out new things
-        because anything could be learned from them and nothing is impossible in ICT. 
-        </p>
-        <p>
-        I'm a team player who sees himself as one of the parts of a team. 
-        </p>
-        <p id="greeting"></p>
-      <article/>
-      
+    <section id="introduction">  
+      <div class="contentWrap">
+        <aside>
+          <img id="pictureOfMe" src="images/Minä.png"/>
+        </aside>
+          
+        <article>
+          <h1>About me</h1>
+          <p>
+          I'm web-application developer from Oulu. I like challenges and trying out new things just for fun. <br/>
+          I started in DevLAB 27th of august. I wanted to study in DevLAB because its focused on solving problems that are 
+          daily life for some people. I was working as a contact person and a programmer and both of those are something that I can do
+          very well. I was arranging meetings and was one of the product developers who made it possible to test our prototype
+          in a real environment.
+          </p>
+          <p>
+          I'm not afraid of going outside my comfort zone because thats where I learn the most and I like challenges.
+          I learn fast and I know my strengths and weaknesess.
+          </p>
+        </article>
+      </div>   
+      <div><p id="greeting"></p></div>
     </section>
     
     <section id="skills">
+    <div class="contentWrap">
       <aside id="programmingThought">
         <p>Sometimes I find myself coding at 2am and thinking to myself "Damn, I did it again..."</p>
         <p> - Me, the next day</p>
       </aside>
       <article>
+        <h1>What I learned</h1>
         <p>
           During my time on DevLAB I learned alot about healthcare policy and problems on that field.
           Most of the time I worked as a contact person in my team, that was working on the solutions for
@@ -56,21 +63,30 @@
           and Saila got the movement detetor working.
         </p>
       </article>
+    </div>
     </section>
 
-    <section id="contact">
-      <aside>
-        <a href="https://www.linkedin.com/in/janne-tuhkanen-525962161/" target="_blank">
-          <img src="images/linkedin.png"/>
-        </a>
-        <a href="https://github.com/TheJanne" target="_blank">
-          <img src="images/github.png"/>
-        </a>
-      </aside>
+   <section id="contact">
+    <div class="contentWrap">
+      <div id="protoImageWrap">
+      <img src="images/firstproto.jpg"/>
+      <img src="images/secondproto.jpg"/>
+      </div>
+    
+    <article style="width: 50%;">
+      <p>Here you can see pictures of our prototype of a product we were developing in DevLAB. 
+      On the left is a prototype before Gate 2. Picture is take from a kitchen of a local elderly home.</p>
+      <p>The second picture is about our prototype after Gate 2. We were using Arduino to make automated 
+      functioning possible. I was mostly working on the logic of lights an</p>
+    </article>
+    </div>      
     </section>
     
-    <section id="feedback">
-
-    </section>
+    <header>      
+      <a id="introductionButton" href="#introduction">Introduction</a>
+      <a id="skillButton" href="#skills">My Skills</a>
+      <a id="contactButton" href="#contact">Contact</a>
+      <a id="experienceButton" href="#experience">Experience</a>
+    </header>    
   </body>
 </html>
