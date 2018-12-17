@@ -1,0 +1,23 @@
+#protoAccordion {
+    padding: 1%;
+}
+
+#protoAccordion > h3 {
+    background: #adbcd3;
+    padding: 1%;
+    margin: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#protoAccordion > h3:hover{
+    cursor: pointer;
+    color: #eefc9c;
+}
+
+#protoAccordion > div {
+    background: #adbcd3;
+    margin: 0;
+    padding: 1%;
+    
+}

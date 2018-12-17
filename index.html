@@ -3,23 +3,19 @@
   <head>    
     <title>Portfolio</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="js/introductionTyper.js" type="text/javascript"></script>
+    <script src="js/prototypeAccordion.js" type="text/javascript"></script>
     <link href="css/styling.css" type="text/css" rel="stylesheet" />
     <link href="css/sections.css" type="text/css" rel="stylesheet" />
+    <link href="css/accordion.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
   </head>
 
   <body>    
-    <header>      
-      <a id="introductionButton" href="#introduction">Introduction</a>
-      <a id="skillButton" href="#skills">My Skills</a>
-      <a id="contactButton" href="#contact">Contact</a>
-      <a id="experienceButton" href="#experience">Experience</a>
-    </header>    
-
-    <section id="introduction">  
+    <section>  
       <div class="contentWrap">
         <aside>
           <img id="pictureOfMe" src="images/Minä.png"/>
@@ -43,7 +39,7 @@
       <div><p id="greeting"></p></div>
     </section>
     
-    <section id="skills">
+    <section>
     <div class="contentWrap">
       <aside id="programmingThought">
         <p>Sometimes I find myself coding at 2am and thinking to myself "Damn, I did it again..."</p>
@@ -52,41 +48,56 @@
       <article>
         <h1>What I learned</h1>
         <p>
-          During my time on DevLAB I learned alot about healthcare policy and problems on that field.
-          Most of the time I worked as a contact person in my team, that was working on the solutions for
-          poor hand hygiene. 
+          Most of my time in DevLAB I was working on a small device that could help hospital staff to remember to use hand disinfectant.
+        </p>  
+        <p>
+          I learned about prototyping.
+          I already knew what prototype was but during my time in there, I learned how to do it effectively.
+          Our prototype was ugly, brings out the core features and cheap.
+          Ugly because then people then have the courage to give honest feed back.
         </p>
         <p>
-          Finally after Gate 2. We got to develop our prototype so that it contained Arduino.
-          Me, Saila and Dat was working on technological part of our prototype. 
-          I was mostly handling logic of led lights, Dat was working on our night clock feature 
-          and Saila got the movement detetor working.
+          I developed as a team worker. The whole semester was about working in a team on a solution to a real everyday problem.
+          We were using scrum, having team coachings and everybody had a role mostly based on current field.
+        </p>
+        <p>
+          I also learned how to build small devices with arduino since our prototype needed a small device that can handle
+          how our prototypes behaves in different situations.
         </p>
       </article>
     </div>
     </section>
 
-   <section id="contact">
-    <div class="contentWrap">
-      <div id="protoImageWrap">
-      <img src="images/firstproto.jpg"/>
-      <img src="images/secondproto.jpg"/>
+   <section>
+    <div id="protoAccordion">
+
+      <h3> First prototype </h3>
+      <div class="contentWrap">
+        <aside><img src="images/firstproto.jpg"/></aside>
+        <article><p>
+          Our first prototype was build with a paper cup, label and a bike light. On top we just put the
+          bottle that our target group used. We kept the prototype in kitchen so that only the staff is using
+          it since they are the ones that are the target group of our solution.<br/><br/>
+          Test results were very positive. Usage of the hand disinfectant bottles atleast doubled among
+          nurses, only with the lights. With that we knew what direction we should go with our innovation.
+        </p></article>      
       </div>
-    
-    <article style="width: 50%;">
-      <p>Here you can see pictures of our prototype of a product we were developing in DevLAB. 
-      On the left is a prototype before Gate 2. Picture is take from a kitchen of a local elderly home.</p>
-      <p>The second picture is about our prototype after Gate 2. We were using Arduino to make automated 
-      functioning possible. I was mostly working on the logic of lights an</p>
-    </article>
+
+      <h3>Second prototype</h3>
+      <div class="contentWrap">
+        <aside><img src="images/secondproto.jpg"/></aside>
+        <article><p>
+          Our second prorotype finally had some automation. We used arduino to build a small device and we
+          put it inside our prototype. It had a motion detecting sensor, night clock, a RGB-led and 
+          ofcourse the code in arduino to run it. It was very interesting to build and I learned how 
+          to build small devices.<br/>
+
+          But we had a problem with it, Arduino itself uses alot of battery. When we went to check on
+          the prototype after it was being tested for 24 hours in a elderly home kitchen, it was out
+          of battery always.
+        <p></article>       
+      </div>
+
     </div>      
-    </section>
-    
-    <header>      
-      <a id="introductionButton" href="#introduction">Introduction</a>
-      <a id="skillButton" href="#skills">My Skills</a>
-      <a id="contactButton" href="#contact">Contact</a>
-      <a id="experienceButton" href="#experience">Experience</a>
-    </header>    
-  </body>
+  </section>
 </html>

@@ -1,19 +1,16 @@
-/* Section divs */
-#introduction   { background: #4286f460; border-color: #4286f4 }
-#skills         { background: #44a81260; border-color: #44a812 }
-#contact        { background: #ff424260; border-color: #ff4242 }
-
 /* Widgets */
 .contentWrap { 
     display: flex;
 }
 
 section{
+    background: #adbcd3; 
+    border-color: black;
     border-top: 5px solid;
     border-left: 5px solid;
     width: 90%;
     height: auto;
-    min-height: 370px;
+    min-height: 390px;
     padding: 1em;
     margin: 1em auto;
 }
@@ -27,7 +24,7 @@ article {
     width: 80%;
     margin: 0.5em;
     padding: 0.5em;
-    font-size: 20px;
+    font-size: 18px;
 } 
 
 #greeting{
